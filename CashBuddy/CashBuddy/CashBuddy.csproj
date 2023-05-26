@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D6E7FB7-1C4D-491C-8BF7-B497F728631A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CashBuddy</RootNamespace>
+    <AssemblyName>CashBuddy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addBankAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addBankAccount.Designer.cs">
+      <DependentUpon>addBankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBkash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBkash.Designer.cs">
+      <DependentUpon>AddBkash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNogod .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNogod .Designer.cs">
+      <DependentUpon>AddNogod .cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRocket.Designer.cs">
+      <DependentUpon>AddRocket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWallet .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWallet .Designer.cs">
+      <DependentUpon>AddWallet .cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="airTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="airTickets.Designer.cs">
+      <DependentUpon>airTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus.Designer.cs">
+      <DependentUpon>Bus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buyTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buyTickets.Designer.cs">
+      <DependentUpon>buyTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="convertingCurreny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="convertingCurreny.Designer.cs">
+      <DependentUpon>convertingCurreny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerHistory.Designer.cs">
+      <DependentUpon>CustomerHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstPage .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPage .Designer.cs">
+      <DependentUpon>FirstPage .cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpLine.Designer.cs">
+      <DependentUpon>HelpLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Launch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launch.Designer.cs">
+      <DependentUpon>Launch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loadingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loadingPage.Designer.cs">
+      <DependentUpon>loadingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mobileRecharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mobileRecharge.Designer.cs">
+      <DependentUpon>mobileRecharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie.Designer.cs">
+      <DependentUpon>Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payBill.Designer.cs">
+      <DependentUpon>payBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payMoney.Designer.cs">
+      <DependentUpon>payMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Savings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Savings.Designer.cs">
+      <DependentUpon>Savings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn .Designer.cs">
+      <DependentUpon>SignIn .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Train.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
+    </Compile>
+    <Compile Include="transferMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transferMoney.Designer.cs">
+      <DependentUpon>transferMoney.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addBankAccount.resx">
+      <DependentUpon>addBankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBkash.resx">
+      <DependentUpon>AddBkash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNogod .resx">
+      <DependentUpon>AddNogod .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRocket.resx">
+      <DependentUpon>AddRocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWallet .resx">
+      <DependentUpon>AddWallet .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="airTickets.resx">
+      <DependentUpon>airTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus.resx">
+      <DependentUpon>Bus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buyTickets.resx">
+      <DependentUpon>buyTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="convertingCurreny.resx">
+      <DependentUpon>convertingCurreny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerHistory.resx">
+      <DependentUpon>CustomerHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPage .resx">
+      <DependentUpon>FirstPage .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpLine.resx">
+      <DependentUpon>HelpLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Launch.resx">
+      <DependentUpon>Launch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loadingPage.resx">
+      <DependentUpon>loadingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mobileRecharge.resx">
+      <DependentUpon>mobileRecharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie.resx">
+      <DependentUpon>Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payBill.resx">
+      <DependentUpon>payBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payMoney.resx">
+      <DependentUpon>payMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Savings.resx">
+      <DependentUpon>Savings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn .resx">
+      <DependentUpon>SignIn .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transferMoney.resx">
+      <DependentUpon>transferMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-icon-3048.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
